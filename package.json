@@ -4,7 +4,7 @@
   "description": "This is a workshop about protractor",
   "main": "index.js",
   "scripts": {
-    "clean": "rmdir /Q/S dist",
+    "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
     "test": "npm run test:headless",
     "test:headless": "npm run build && protractor dist/protractor/headless.config.js",
